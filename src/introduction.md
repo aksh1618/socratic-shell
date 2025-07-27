@@ -2,6 +2,9 @@
 
 This repository explores techniques for making use of Claude Code, Q CLI, and other similar AI assistants. The part of this repository that is currently actionable is the collection of prompts that I have found useful. These include [prompts meant to be installed user-wide][user-prompts] and add-on prompts associated with [memory retention approaches][memory-approaches].
 
+[user-prompts]: https://github.com/nikomatsakis/socratic-shell/tree/main/prompts/user
+[memory-approaches]: ./retaining-context.md
+
 ## TL;DR: How do I install the damn things
 
 To install the user-wide prompt, checkout the repo 
@@ -19,12 +22,6 @@ curl https://raw.githubusercontent.com/socratic-shell/socratic-shell/main/src/pr
 
 # Team Collaboration Patterns
 
-```
-
-[user-prompts]: https://github.com/nikomatsakis/socratic-shell/tree/main/prompts/user
-
-[memory-approaches]: ./retaining-context.md
-
 ## The goal: AI as a pair programming partner
 
 Most AI tools seem to be geared for action -- they seem to be designed to wow you by creating functional code from minimal prompts. That makes for an impressive demo, but it doesn't scale to real code. What I and others have found is that the best way to work with AI assistants is to use them as your **pair programming partner**. That is, talk out your designs. Sketch. Play. Work top-down, just as you would with a human, avoiding the need to get into details until you've got the big picture settled. *Then* start to write code. And when you do, *review* 
@@ -39,7 +36,6 @@ One of the key techniques used in this repository is [collaborative prompting](.
 ## Retaining context across sessions
 
 Collaborative prompting works great until the context starts to run out or you end your session. The challenge is that there are many different kinds of context to retain: how you like to interact, information about the project, knowledge about how the code works that should be shared with everyone, and personal insights. This area is very much in flux and I'm exploring a number of different techniques to see what works best. See [retaining context](./retaining-context.md) for details on the various approaches.
-
 
 [Yehuda Katz]: https://www.linkedin.com/in/yehudakatz/
 [Kari Wilhelm]: https://www.linkedin.com/in/kariwilhelm/
